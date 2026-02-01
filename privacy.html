@@ -1,137 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy - Adigo Taxi</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Privacy Policy – Adigo Taxi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f9f9f9;
       color: #222;
+      margin: 0;
+      padding: 0;
       line-height: 1.6;
+    }
+    .container {
       max-width: 900px;
       margin: auto;
-      padding: 20px;
+      background: #ffffff;
+      padding: 24px;
     }
-    h1, h2 {
-      color: #022C22;
+    h1, h2, h3 {
+      color: #111;
     }
-    hr {
-      border: none;
-      border-top: 1px solid #ddd;
-      margin: 20px 0;
+    h1 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      font-size: 14px;
+      color: #555;
+    }
+    .highlight {
+      background: #f1f5ff;
+      padding: 10px;
+      border-left: 4px solid #3b6cff;
+      margin: 16px 0;
     }
   </style>
 </head>
+
 <body>
+  <div class="container">
 
-<h1>Privacy Policy for Adigo Taxi</h1>
-<p><strong>Last updated: February 2026</strong></p>
+    <h1>Privacy Policy for Adigo Taxi</h1>
+    <p><strong>Last updated:</strong> February 2026</p>
 
-<p>
-Adigo Taxi (“we”, “our”, or “us”) respects your privacy and is committed to protecting your personal information.
-This Privacy Policy explains how we collect, use, store, and protect information when you use our mobile application.
-</p>
+    <p>
+      Adigo Taxi (“we”, “our”, or “us”) respects your privacy and is committed to protecting your
+      personal data. This Privacy Policy explains how we collect, use, store, and protect information
+      when you use the Adigo Taxi mobile application.
+    </p>
 
-<hr>
+    <h2>1. Information We Collect</h2>
 
-<h2>1. Information We Collect</h2>
+    <h3>Personal Information</h3>
+    <ul>
+      <li><strong>Phone Number</strong> – used for user authentication via SMS (Firebase Authentication).
+        Supported regions include Uzbekistan (+998) and South Korea (+82).</li>
+    </ul>
 
-<p><strong>Phone Number:</strong> Used for SMS authentication via Firebase (Uzbekistan +998, South Korea +82).</p>
+    <h3>Location Information</h3>
+    <ul>
+      <li><strong>Approximate location</strong></li>
+      <li><strong>Precise location</strong></li>
+    </ul>
+    <p>
+      Location data is used to determine pickup and drop-off points, calculate distance and pricing,
+      and match passengers with nearby drivers.
+    </p>
 
-<p><strong>Location Data:</strong> Used to determine pickup location, calculate distance and pricing, and match drivers.</p>
+    <h3>Order Information</h3>
+    <ul>
+      <li>Pickup and destination locations</li>
+      <li>Route details</li>
+      <li>Service type</li>
+      <li>Passenger count</li>
+      <li>Order notes, time, and price</li>
+    </ul>
 
-<p><strong>Order Information:</strong> Route details, service type, passenger count, notes, time, and price.</p>
+    <h3>App & Device Information</h3>
+    <ul>
+      <li>Firebase device identifiers</li>
+      <li>Crash logs and diagnostics</li>
+      <li>App interaction data (order creation, acceptance, cancellation)</li>
+    </ul>
 
-<p><strong>Technical Data:</strong> Firebase device identifiers, crash logs, and diagnostics.</p>
+    <h3>Push Notifications</h3>
+    <ul>
+      <li>Firebase Cloud Messaging (FCM) token – used to send order status and service notifications</li>
+    </ul>
 
-<p><strong>Push Notifications:</strong> FCM token for order updates.</p>
+    <h2>2. How We Use Information</h2>
+    <ul>
+      <li>User authentication and account management</li>
+      <li>Order creation and processing</li>
+      <li>Driver matching and dispatching</li>
+      <li>Service-related notifications</li>
+      <li>Fraud prevention, abuse detection, and security</li>
+      <li>App performance monitoring and crash analysis</li>
+    </ul>
 
-<hr>
+    <div class="highlight">
+      <strong>We do NOT use personal data for advertising or marketing purposes.</strong>
+    </div>
 
-<h2>2. How We Use Information</h2>
-<ul>
-  <li>User authentication</li>
-  <li>Order processing</li>
-  <li>Driver matching</li>
-  <li>Notifications</li>
-  <li>Security and abuse prevention</li>
-</ul>
+    <h2>3. Telegram Integration</h2>
+    <p>
+      For operational purposes, order details may be forwarded to a <strong>private, driver-only
+      Telegram group</strong>.
+    </p>
+    <ul>
+      <li>Phone numbers are not shared publicly</li>
+      <li>A passenger’s phone number is visible only after a driver accepts an order</li>
+      <li>Telegram is used strictly for order dispatch and communication support</li>
+    </ul>
 
-<p>We do not use personal data for advertising.</p>
+    <h2>4. Data Storage & Security</h2>
+    <ul>
+      <li>All data is stored securely on Google Firebase servers</li>
+      <li>Access is restricted to authorized systems only</li>
+      <li><strong>All data is encrypted in transit using HTTPS/TLS</strong></li>
+    </ul>
 
-<hr>
+    <h2>5. Third-Party Services</h2>
+    <ul>
+      <li>Firebase Authentication</li>
+      <li>Firebase Realtime Database</li>
+      <li>Firebase Cloud Messaging (FCM)</li>
+      <li>Firebase Crashlytics</li>
+      <li>Google Play Integrity API</li>
+      <li>Google reCAPTCHA</li>
+    </ul>
 
-<h2>3. Telegram Integration</h2>
-<p>
-Orders may be sent to a private Telegram driver group.
-Phone numbers are shared only after order acceptance.
-</p>
+    <h2>6. Data Retention</h2>
+    <p>
+      User data is retained only as long as necessary to provide the service and comply with legal or
+      security obligations.
+    </p>
+    <ul>
+      <li>Most user data is deleted immediately after account deletion</li>
+      <li>Some technical or security-related data may be retained for up to <strong>30 days</strong></li>
+    </ul>
 
-<hr>
+    <h2>7. Children’s Privacy</h2>
+    <p>
+      Adigo Taxi is not intended for children under the age of 13.
+      We do not knowingly collect personal data from children.
+    </p>
 
-<h2>4. Data Storage & Security</h2>
-<p>
-Data is securely stored on Google Firebase servers with strict access control.
-</p>
+    <h2>8. Policy Updates</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Any changes will be published on this page
+      with an updated revision date.
+    </p>
 
-<hr>
+    <h2 id="delete-account">9. Delete Account & Data</h2>
+    <p>
+      Users may request deletion of their account and associated personal data at any time.
+    </p>
 
-<h2>5. Third-Party Services</h2>
-<ul>
-  <li>Firebase Authentication</li>
-  <li>Firebase Realtime Database</li>
-  <li>Firebase Cloud Messaging</li>
-  <li>Google Play Integrity API</li>
-  <li>reCAPTCHA</li>
-</ul>
+    <h3>How to request account deletion:</h3>
+    <ol>
+      <li>Email us at <strong>adigotaxi@gmail.com</strong></li>
+      <li>Use subject: <strong>Delete My Adigo Taxi Account</strong></li>
+      <li>Include the phone number used to register in the app</li>
+    </ol>
 
-<hr>
+    <p>Upon deletion, we will remove:</p>
+    <ul>
+      <li>Phone number</li>
+      <li>Order history</li>
+      <li>Associated Firebase identifiers</li>
+    </ul>
 
-<h2>6. Data Retention</h2>
-<p>
-Data is stored only as long as necessary.
-Users may request deletion via email.
-</p>
+    <p>
+      Some data may be retained for up to <strong>30 days</strong> for legal or security purposes.
+    </p>
 
-<hr>
+    <h2>10. Contact Us</h2>
+    <p>
+      If you have any questions regarding this Privacy Policy or your data:
+    </p>
+    <p>
+      📧 Email: <a href="mailto:adigotaxi@gmail.com">adigotaxi@gmail.com</a>
+    </p>
 
-<h2>7. Children’s Privacy</h2>
-<p>This app is not intended for children under 13.</p>
+    <div class="footer">
+      © 2026 Adigo Taxi. All rights reserved.
+    </div>
 
-<hr>
-
-<h2>8. Policy Updates</h2>
-<p>Updates will be published on this page.</p>
-
-<hr>
-<h2 id="delete-account">Delete Account & Data</h2>
-
-<p>
-Users may request deletion of their account and associated data at any time.
-</p>
-
-<p>
-To request account deletion, please email us at:  
-<strong>adigotaxi@gmail.com</strong>
-</p>
-
-<p>
-Include the phone number used to log in. We will delete:
-</p>
-
-<ul>
-  <li>Phone number</li>
-  <li>Order history</li>
-  <li>Associated Firebase identifiers</li>
-</ul>
-
-<p>
-Some data may be retained for legal or security purposes for up to 30 days.
-</p>
-<h2>9. Contact</h2>
-<p>Email: <strong>adigotaxi@gmail.com</strong></p>
-
+  </div>
 </body>
 </html>
